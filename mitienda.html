@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> mitienda </title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <meta name="author" content="Rene Ordosgoitia">
+
+<style>
+	
+body { background-color: lightblue}
+	
+.header{ width: 100%;
+		border: 2px solid blue;
+		
+		}
+
+		.usuario { 
+					width: 30%;
+					display: inline-block;
+					border: 2px solid blue;
+					text-align: center;
+					position: relative;
+					
+
+					}
+
+		.mitienda { width: 30%;
+
+					display: inline-block;		
+					border: 2px solid blue;	
+					position: relative;
+					text-align: center;
+									 
+				}
+
+		.carrito { 	width: 30%;
+			         display: inline-block;	
+				border: 2px solid blue;		
+				position: relative;
+				text-align: center;
+				}
+
+
+		.content { width: 100%; }
+
+
+		.right { width: 40%;
+				display: inline-block;
+				position: relative;
+				margin-top: 100px;	 
+				margin-left: 120px;
+				font-size: 30px;
+				}
+
+
+		.left { width: 40%;
+				display: inline-block;
+				position: relative; 
+				margin-left: 60px;
+				font-size: 30px}
+
+
+		.lhp { background-image: url("imagen/hpl.png");
+				background-repeat: no-repeat;
+				background-size: 300px;
+				background-position: 0px 50px;
+
+				
+							 }
+
+		.lhp form { margin-bottom: 7		0px;
+					padding-bottom: 30px}
+
+
+		.aseo { background-image: url("imagen/jsc.png");
+				background-repeat: no-repeat;
+				background-size: 300px;
+				background-position: 0px 50px
+			     }
+
+		.aseo form { margin-bottom: 30px;
+					padding-bottom: 30px }
+
+		.factura { margin-top: 100px; 
+					margin-left: 60px;
+					font-size: 30px;
+					width: 100% }
+
+
+		.calcular { width: 30%;
+					display: inline-block;
+					position: relative;	
+					font-size: 40px }
+
+
+		.total { width: 60%;
+				display: inline-block;
+				position: relative; 
+				margin-left: 125px}
+
+		.imgRedonda { width:100px; 
+						height: 100px;
+						border-radius:50px;
+						border:10px; }
+
+</style>
+
+</head>
+  
+  <body>
+  	
+
+  	<div class= "header">
+
+
+  			<div class = "usuario">
+			  			
+  				<img src="imagen/usuario.png" class= "imgRedonda"  >
+
+  			</div>
+
+  			<div class="mitienda">
+
+  				<p style="background-color: rgb(160, 120, 95); 
+					padding-top: 10px; padding-bottom: 10px; 
+					margin-right: 10px; margin-left: 10px;
+					width: 300px; cursor: pointer">MI TIENDA ONLINE</p>
+
+  			</div>
+
+
+  				<div class="carrito">
+
+  					<p  style="background-color: rgb(90, 120, 160); 
+					padding-top: 10px; padding-bottom: 10px; 
+					margin-right: 10px; margin-left: 10px;
+					width: 100px;
+					display: inline-block;
+					cursor: pointer"> Carrito </p>		
+					
+
+				<i class="fa fa-shopping-cart" style="font-size:20px; color:black; cursor: pointer"></i>	
+</div>
+
+  		  			
+  		</div>
+
+	
+
+		
+
+
+  	<div class= "content">
+
+
+
+  		<div class = "content left">
+
+		<div class = " lhp">
+		  
+			<form action="listado">
+			
+			leche: <input type="text" name="leche" value="0" style = "margin-top: 100px; padding-left: 11px;" ><br>
+
+
+					<label for="txtpan"> pan </label>
+
+					
+					<input type="hidden" id="valpan" value = "500">
+
+					
+					<input type="numeric" id="txtpan" value="0">
+
+			
+			huevo: <input type="text" name="huevo" value="0" style = "margin-top: 45px; " ><br>
+
+		
+			
+	
+			</form> 
+		</div>
+
+		<div class= "subtotal">
+			
+			<form action="/action_page.php">
+			
+			Subtotal: <input type="text" name="subtotal" value="0" style = "margin-top: 100px; width: 140px" ><br>
+
+			
+			IVA: <input type="text" name="IVA" value="0" style = "margin-top: 45px; padding-left: 20px" ><br>
+
+		
+			
+			</form> 
+
+		</div>
+		
+  		</div>
+
+		
+		
+
+
+  		<div class= "content right">
+
+			<div class = " aseo ">
+		  
+			<form action="/action_page.php">
+			
+			jabon: <input type="text" name="jabon" value="0" style = "margin-top: 100px; padding-left: 11px" ><br>
+
+			
+			shampoo: <input type="text" name="shampoo" value="0" style = "margin-top: 45px; width: 137px" ><br>
+
+		
+			crema: <input type="text" name="crema" value="0"style = "margin-top: 45px; padding-left: 3px" ><br>	
+	
+			</form> 
+
+		</div>
+
+		<div class= "subtotal">
+			
+			<form action="/action_page.php">
+			
+			Subtotal: <input type="text" name="subtotal" value="0" style = "margin-top: 100px; width: 140px" ><br>
+
+			
+			IVA: <input type="text" name="IVA" value="0" style = "margin-top: 45px; padding-left: 20px" ><br>
+
+
+  		</div>
+
+  	</div>
+
+
+  		<div class = "factura" >
+  				
+  				<div class="calcular">
+  					
+  					<p> Factura </p>
+
+  					<p> calcular </p>
+
+
+  				</div>
+
+
+  				<div class= "total">
+		
+			 	Subtotal: <input type="text" name="subtotal" value="0" style = "margin-top: 100px; width: 140px" ><br>
+
+			
+				IVA: <input type="text" name="IVA" value="0" style = "margin-top: 45px; padding-left: 20px" ><br>
+
+				TOTAL : <input type="text" name="IVA" value="0" style = "margin-top: 45px; padding-left: 20px" ><br> 			
+
+
+  				</div>
+
+
+  		<div class="footer">
+
+
+  		</div>
+  		</div>
+
+
+
+  </body>
+
+
+
+</html>
